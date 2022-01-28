@@ -1,0 +1,42 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="MainTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<PageTitle>Calcool 6</PageTitle>
+<MudLayout>
+    <MudAppBar>
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <img src="img/calculator.png" alt="Calculator" height="32" />
+        <MudText Typo="Typo.h5" Class="ml-3">Calcool 6</MudText>
+        <MudSpacer />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <div class="main-content">
+            @Body
+        </div>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    MudTheme MainTheme = new()
+        {
+            Palette = new Palette()
+            {
+                Primary = "#0f4c81",
+                Secondary = "#6c757d",
+                AppbarBackground = "#0f4c81",
+            }
+        };
+
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

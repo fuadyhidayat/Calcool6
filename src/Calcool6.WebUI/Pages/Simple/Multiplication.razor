@@ -1,0 +1,41 @@
+﻿@page "/simple/multiplication"
+@using Calcool6.Application
+
+<Title Text="Title" />
+<MudPaper Class="d-flex align-center pa-4 mt-1">
+    <div class="mx-3">
+        <MudTextField Label="Input 1" Variant="Variant.Outlined" @bind-Value="input1"></MudTextField>
+    </div>
+    <div class="mx-3">
+        <MudText Typo="Typo.h3">x</MudText>
+    </div>
+    <div class="mx-3">
+        <MudTextField Label="Input 2" Variant="Variant.Outlined" @bind-Value="input2"></MudTextField>
+    </div>
+    <div class="mx-3">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Calculate">
+            =
+        </MudButton>
+    </div>
+    <div class="mx-3">
+        <MudText Typo="Typo.h3">@result</MudText>
+    </div>
+</MudPaper>
+
+@code {
+    int input1;
+    int input2;
+    int result;
+
+    void Calculate()
+    {
+        try
+        {
+            result = SimpleCalculation.Multiply(input1, input2);
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add(ex.Message);
+        }
+    }
+}
