@@ -1,11 +1,9 @@
 using Calcool6.Application;
 using FluentAssertions;
-using System.Diagnostics.CodeAnalysis;
 using Xunit;
 
 namespace Calcool6.UnitTests;
 
-[ExcludeFromCodeCoverage]
 public class SimpleCalculationTests
 {
     [Theory]
