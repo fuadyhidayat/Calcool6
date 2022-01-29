@@ -10,10 +10,8 @@ public class AdvancedCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetPowerResult(int input1, int input2, double expectedResult)
     {
-        // Act
         var result = AdvancedCalculation.Power(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 
@@ -21,10 +19,8 @@ public class AdvancedCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetRemainderResult(int input1, int input2, int expectedResult)
     {
-        // Act
         var result = AdvancedCalculation.Remainder(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 }

@@ -10,10 +10,8 @@ public class SimpleCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetAdditionResult(int input1, int input2, int expectedResult)
     {
-        // Act
         var result = SimpleCalculation.Add(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 
@@ -21,10 +19,8 @@ public class SimpleCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetSubtractionResult(int input1, int input2, int expectedResult)
     {
-        // Act
         var result = SimpleCalculation.Subtract(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 
@@ -32,10 +28,8 @@ public class SimpleCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetMultiplicationResult(int input1, int input2, int expectedResult)
     {
-        // Act
         var result = SimpleCalculation.Multiply(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 
@@ -43,10 +37,8 @@ public class SimpleCalculationTests
     [InlineData(0, 0, 0)]
     public void ShouldGetDivisionResult(int input1, int input2, double expectedResult)
     {
-        // Act
         var result = SimpleCalculation.Divide(input1, input2);
 
-        // Assert
         result.Should().Be(expectedResult);
     }
 }
