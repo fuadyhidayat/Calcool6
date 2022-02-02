@@ -29,6 +29,11 @@
 
     void Calculate()
     {
+        if (input1 == 3)
+        {
+            throw new InvalidOperationException("Gak boleh angka 3");
+        }
+
         try
         {
             result = SimpleCalculation.Add(input1, input2);
