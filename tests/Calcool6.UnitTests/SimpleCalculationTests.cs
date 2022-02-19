@@ -7,7 +7,7 @@ namespace Calcool6.UnitTests;
 public class SimpleCalculationTests
 {
     [Theory]
-    [InlineData(5, 8, 14)]
+    [InlineData(5, 8, 13)]
     [InlineData(16, -7, 9)]
     [InlineData(-8, 10, 2)]
     [InlineData(-2, -27, -29)]
