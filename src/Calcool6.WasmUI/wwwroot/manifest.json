@@ -1,0 +1,21 @@
+{
+  "name": "Calcool6.WasmUI",
+  "short_name": "Calcool6.WasmUI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03173d",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "img/icons/icon-512.png",
+      "type": "images/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "img/icons/icon-192.png",
+      "type": "images/png",
+      "sizes": "192x192"
+    }
+  ]
+}
