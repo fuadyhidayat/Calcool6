@@ -5,11 +5,11 @@ on:
     - main
 env:
   AZURE_WEBAPP_NAME: calcool6-github
-  AZURE_WEBAPP_PACKAGE_PATH: src/Calcool6.WasmUI/publish
+  AZURE_WEBAPP_PACKAGE_PATH: src/Calcool6.WebUI/publish
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.calcool6_github_58f0 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: src/Calcool6.WasmUI
+  WORKING_DIRECTORY: src/Calcool6.WebUI
 jobs:
   build-test-and-deploy:
     runs-on: ubuntu-latest
