@@ -2,7 +2,7 @@ name: Build and deploy .NET Core app to Linux WebApp calcool6-github
 on:
   push:
     branches:
-    - github-actions
+    - main
 env:
   AZURE_WEBAPP_NAME: calcool6-github
   AZURE_WEBAPP_PACKAGE_PATH: src/Calcool6.WebUI/publish
