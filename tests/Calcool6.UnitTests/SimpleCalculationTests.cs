@@ -7,10 +7,10 @@ namespace Calcool6.UnitTests;
 public class SimpleCalculationTests
 {
     [Theory]
-    [InlineData(5, 8, 0)]
-    [InlineData(16, -7, 0)]
-    [InlineData(-8, 10, 0)]
-    [InlineData(-2, -27, 0)]
+    [InlineData(5, 8, 13)]
+    [InlineData(16, -7, 9)]
+    [InlineData(-8, 10, 2)]
+    [InlineData(-2, -27, -29)]
     public void ShouldGetAdditionResult(int input1, int input2, int expectedResult)
     {
         var result = SimpleCalculation.Add(input1, input2);
